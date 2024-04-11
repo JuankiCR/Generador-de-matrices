@@ -1,0 +1,79 @@
+:root {
+  --text: #180504;
+  --background: #fdf6f6;
+  --primary: #da4a38;
+  --secondary: #83e8c8;
+  --accent: #5591e0;
+}	
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+h1 {
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  color: var(--accent);
+  font-size: 2em;
+  margin: auto;
+  width: fit-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+input[type="number"], select {
+  margin: 10px;
+}
+
+.optionsWrapper{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.optionItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_generar {
+  transition: background-color 0.3s ease,
+              color 0.3s ease;
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn_generar:hover {
+  background-color: var(--accent);
+}
+
+#matrixOutput {
+  display: flex;
+  flex-direction: column; 
+  padding: 1rem;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 1rem;
+  font-weight: 900;
+}
+
+#matrixOutput div {
+  display: flex;
+  gap: 16px;
+}

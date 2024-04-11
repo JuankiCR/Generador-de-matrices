@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generador de Matrices</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Generador de Matrices.</h1>
+    <div class="optionsWrapper">
+      <di0v class="optionItem">
+        <label for="numRows">Número de filas:</label>
+        <input type="number" id="numRows" min="1" value="10">
+      </di0v>
+
+      <div class="optionItem">
+        <label for="numCols">Número de columnas:</label>
+        <input type="number" id="numCols" min="1" value="10">
+      </div>
+    </div>
+    
+    <div class="optionItem">
+      <label for="method">Algoritmo:</label>
+      <select id="method">
+        <option value="1">Método lineal congruencial</option>
+        <option value="2">Método Lagged Fibonacci</option>
+        <option value="3">Método Linear Feedback</option>
+        <option value="4">Método Wichmann Hill</option>
+        <option value="5">Método Blum Blum Shub</option>
+      </select>
+    </div>
+
+    <button id="generate" class="btn_generar">Generar Matriz</button>
+
+    <div id="matrixOutput"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
